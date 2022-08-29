@@ -15,7 +15,7 @@ let currentScore = 0;
 
 /////////// fetch data ///////////////
 async function getData() {
-  let respnose = await fetch("../html.json");
+  let respnose = await fetch("./html.json");
   let data = await respnose.json();
   return data;
 }
