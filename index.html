@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <title>quiz</title>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="status-bar">
+            <div>
+                Category : <span class="cat" >HTML</span>
+            </div>
+            <div>
+                Questions count : <span class="count" id="count"> 2</span>
+            </div>
+        </div>
+        <div class="question-container" id="questionContainer">
+            <div class="question" id="question">
+                what is the singelton ?
+            </div>
+            <div class="answers" id="answers">
+
+                <div class="answer">
+                    <input type="radio" id="html" name="size" value="HTML">
+                    <label for="html">HTML</label><br>
+                </div>
+
+                <div class="answer">
+                    <input type="radio" id="css" name="size" value="HTML">
+                    <label for="css">HTML</label><br>
+                </div>
+                <div class="answer">
+                    <input type="radio" id="df" name="size" value="HTML">
+                    <label for="df">HTML</label><br>
+                </div>
+            </div>
+            <div class="submit" id="submit">submit answer</div>
+        </div>
+        <div class="navigation-bar">
+            <div class="bullets-container" id="bulletsContainer">
+                <span class="bullet"></span>
+                <span class="bullet"></span>
+                <span class="bullet"></span>
+                <span class="bullet"></span>
+            </div>
+            <div class="timer">
+                <span id="timer">20:23</span>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
