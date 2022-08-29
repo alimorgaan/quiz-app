@@ -6,6 +6,7 @@ let bulletsDiv = document.getElementById("bulletsContainer");
 let countSpan = document.getElementById("count");
 let midContainer = document.getElementById("questionContainer");
 let timerSpan = document.getElementById("timer");
+let navigationBar = document.getElementById('navigationBar'); 
 //globals
 
 let questionsArray = [];
@@ -108,6 +109,10 @@ function evaluate() {
   <div class="grade">${grade}</div>
   <div class="grade">Your Score Is ${currentScore} from ${questionsLength}</div>
   `;
+    
+    clearInterval(myTimer);
+    navigationBar.remove(); 
+    
 }
 
 function nextQuestion() {
